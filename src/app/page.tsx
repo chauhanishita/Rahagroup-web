@@ -372,7 +372,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-3 gap-8">
               <div className="glass-card p-10 rounded-xl">
-                <img src="/images/Raha Energy Logo .png" alt="Raha Energy Logo" className="h-12 w-auto mb-6 object-contain" />
+                <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">bolt</span>
                 <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Energy ⚡</h4>
                 <p className="text-white/70 font-inter text-sm leading-relaxed">Expanding reliable energy solutions with a focus on innovation, efficiency, and nationwide accessibility.</p>
               </div>
@@ -780,7 +780,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-card p-6 rounded-xl text-center flex flex-col items-center justify-center">
-                <img src="/images/Raha Energy Logo .png" alt="Raha Energy Logo" className="h-10 w-auto mb-4 object-contain" />
+                <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">bolt</span>
                 <h5 className="font-inter text-xs font-bold uppercase tracking-wider text-white">Raha Energy ⚡</h5>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
