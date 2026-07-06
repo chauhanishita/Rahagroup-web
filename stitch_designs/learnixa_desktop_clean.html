@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Learnixa | Raha Group Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "primary-container": "#1c1b1b",
+                    "on-secondary-container": "#785f2b",
+                    "on-secondary": "#ffffff",
+                    "outline": "#747878",
+                    "inverse-surface": "#2f312f",
+                    "tertiary-fixed": "#d5e3ff",
+                    "surface-variant": "#e3e2df",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#e3c285",
+                    "error": "#ba1a1a",
+                    "on-background": "#1a1c1a",
+                    "surface-bright": "#faf9f6",
+                    "surface-container-low": "#f4f3f0",
+                    "on-tertiary-fixed": "#0e1c30",
+                    "tertiary-fixed-dim": "#bac7e2",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#77849d",
+                    "surface-dim": "#dbdad7",
+                    "on-primary-container": "#858383",
+                    "secondary-fixed": "#ffdea3",
+                    "surface": "#faf9f6",
+                    "on-surface": "#1a1c1a",
+                    "tertiary-container": "#0e1c30",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#5f5e5e",
+                    "surface-container-high": "#e9e8e5",
+                    "on-secondary-fixed": "#261900",
+                    "on-primary-fixed-variant": "#474646",
+                    "on-tertiary-fixed-variant": "#3a475d",
+                    "secondary-container": "#fedb9c",
+                    "surface-container": "#efeeeb",
+                    "on-primary-fixed": "#1c1b1b",
+                    "primary-fixed": "#e5e2e1",
+                    "background": "#faf9f6",
+                    "surface-container-highest": "#e3e2df",
+                    "secondary": "#735b28",
+                    "outline-variant": "#c4c7c7",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#000000",
+                    "primary": "#000000",
+                    "on-surface-variant": "#444748",
+                    "on-secondary-fixed-variant": "#594312",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f2f1ee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "gutter": "32px",
+                    "stack-lg": "48px",
+                    "section-v-desktop": "120px",
+                    "stack-md": "24px",
+                    "margin-mobile": "24px",
+                    "section-v-mobile": "48px",
+                    "margin-desktop": "80px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "eyebrow": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md-mobile": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["44px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                    "eyebrow": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.7", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-md-mobile": ["28px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.7", "letterSpacing": "0em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .reveal-delay-1 { animation-delay: 0.1s; }
+        .reveal-delay-2 { animation-delay: 0.2s; }
+        .reveal-delay-3 { animation-delay: 0.3s; }
+        
+        body {
+            background-color: #faf9f6;
+            color: #1a1c1a;
+            overflow-x: hidden;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline/10 animate-fade-up">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tighter">RAHA GROUP</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label text-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label text-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Raha Infra</a>
+<a class="font-label text-label uppercase tracking-widest text-primary border-b-2 border-secondary font-bold pb-1" href="#">Learnixa</a>
+<a class="font-label text-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Big Think</a>
+<a class="font-label text-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-[8px] font-label text-label hover:bg-on-primary-container transition-all duration-300">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-v-desktop overflow-hidden">
+<div class="editorial-grid items-end">
+<div class="col-span-12 md:col-span-7 animate-fade-up reveal-delay-1">
+<p class="font-eyebrow text-eyebrow text-secondary uppercase mb-4">Educational Excellence</p>
+<h1 class="font-display-lg text-display-lg leading-none mb-8">Empowering the Next Generation.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Learnixa, a division of Raha Group, redefines the intersection of architectural precision and pedagogical innovation to build the digital infrastructures of tomorrow.
+                    </p>
+</div>
+<div class="col-span-12 md:col-span-5 animate-fade-up reveal-delay-2 h-[500px] rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A grand, ultra-modern university library interior featuring sweeping white curves, massive glass windows overlooking a lush green campus, and students collaborating in minimalist, open-plan learning zones. The lighting is bright and natural, emphasizing the architectural prestige and clean light-mode aesthetic of Raha Group." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5vszCUoxDw9oCRyn96l8gSGsGtMQAVQcB2kzUJ_tSsB0yoSJj62is5PMa1fNWXCrm-xXaA_LFogQNERGeAktPgyemUGvYEvS4UbZGdNVXERvGiHm4RKv3SzuNBx-90I0rq_hjQy_K30CdhLy6AQiD1hQmG1tLcYm4mDtmrgkBQjzMNg0IXn-Vm0tkAJMk7PEZtR9Mx-sp7zJxvRmQhaZTuDWGTwrcGrdEUjI5NTbbNK4vdUKLmAIu"/>
+</div>
+</div>
+</section>
+<!-- Offering - Bento Grid Style -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-v-desktop">
+<div class="mb-16 animate-fade-up">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Core Offerings</h2>
+<div class="w-24 h-1 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Digital Learning Platforms -->
+<div class="bg-surface-container-low p-stack-lg rounded-xl flex flex-col justify-between h-[450px] animate-fade-up reveal-delay-1 hover:bg-surface-container transition-colors group">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">school</span>
+<h3 class="font-headline-md-mobile text-headline-md-mobile mb-4">Digital Learning Platforms</h3>
+<p class="text-on-surface-variant">Scalable, cloud-native ecosystems designed for intuitive knowledge transfer and institutional agility.</p>
+</div>
+<div class="pt-8 border-t border-outline/10 group-hover:border-secondary transition-colors">
+<a class="font-label text-label uppercase tracking-widest flex items-center gap-2" href="#">Explore Platform <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<!-- Higher Ed Partnerships -->
+<div class="bg-primary-container text-on-primary p-stack-lg rounded-xl flex flex-col justify-between h-[450px] animate-fade-up reveal-delay-2">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-6">account_balance</span>
+<h3 class="font-headline-md-mobile text-headline-md-mobile mb-4">Higher Ed Partnerships</h3>
+<p class="text-on-primary-container">Strategic alliances with global universities to bridge the gap between academic theory and industry reality.</p>
+</div>
+<div class="pt-8 border-t border-outline/20">
+<a class="font-label text-label uppercase tracking-widest flex items-center gap-2 text-secondary-fixed-dim" href="#">Join Network <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<!-- Skill Development -->
+<div class="bg-surface-container-low p-stack-lg rounded-xl flex flex-col justify-between h-[450px] animate-fade-up reveal-delay-3 hover:bg-surface-container transition-colors group">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">psychology</span>
+<h3 class="font-headline-md-mobile text-headline-md-mobile mb-4">Skill Development</h3>
+<p class="text-on-surface-variant">Precision-curated bootcamps and certifications focused on emerging technologies and leadership mastery.</p>
+</div>
+<div class="pt-8 border-t border-outline/10 group-hover:border-secondary transition-colors">
+<a class="font-label text-label uppercase tracking-widest flex items-center gap-2" href="#">View Programs <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="bg-surface-container-highest py-section-v-desktop px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto editorial-grid">
+<div class="col-span-12 md:col-span-5 mb-12 md:mb-0">
+<p class="font-eyebrow text-eyebrow text-secondary uppercase mb-4">Institutional Impact</p>
+<h2 class="font-headline-md text-headline-md mb-8">Measure of Success</h2>
+<div class="space-y-12">
+<div class="animate-fade-up">
+<span class="font-display-lg text-[64px] block font-bold leading-none">250K+</span>
+<span class="font-label text-label uppercase text-on-surface-variant tracking-widest">Global Students Empowered</span>
+</div>
+<div class="animate-fade-up reveal-delay-1">
+<span class="font-display-lg text-[64px] block font-bold leading-none">120+</span>
+<span class="font-label text-label uppercase text-on-surface-variant tracking-widest">Institutional Partnerships</span>
+</div>
+<div class="animate-fade-up reveal-delay-2">
+<span class="font-display-lg text-[64px] block font-bold leading-none">94%</span>
+<span class="font-label text-label uppercase text-on-surface-variant tracking-widest">Post-Graduate Placement</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7">
+<div class="grid grid-cols-1 gap-8">
+<div class="bg-surface p-stack-lg rounded-xl animate-fade-up shadow-sm">
+<p class="font-body-lg text-body-lg italic mb-8">"Learnixa didn't just provide a platform; they transformed how our faculty engages with digital native students. The architectural clarity of their UI mirrors the clarity of their pedagogical philosophy."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female university provost in her late 50s, wearing elegant academic attire, captured in a bright, high-contrast office with architectural books in the background. The lighting is soft and sophisticated, aligning with the Raha Group's premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyVT3-F_3WNOlamXj2qkbhvrovIDXPMo6_MXHNU8XiJO3k9ZkRJTA7canRDv-9tHVUBaIpiCyT_1lzn5ih1Xiy-t0vwFM_NUeyrZIWVmSFl57EQJpWkCGRzWP4qgwleohqvQ_uZI5OEL6LVePDTAvBEzLVBlQF_D74MoHE4hRY8JWTeOPbC38KqSJ8w4rsIV4pGYRi7Vz7IC1DnCwH69JwVZYHEjeUfwhOI0dYXFhA5ynHksHaC8mb"/>
+</div>
+<div>
+<p class="font-bold">Dr. Helena Vane</p>
+<p class="text-label text-on-surface-variant">Provost, Global Institute of Tech</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-stack-lg rounded-xl animate-fade-up reveal-delay-2 shadow-sm">
+<p class="font-body-lg text-body-lg italic mb-8">"The skill development program was the catalyst for my transition into Al architecture. The curriculum is rigorous, editorial, and deeply connected to market demands."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A young male professional in his late 20s, wearing a modern black turtleneck, looking confidently at the camera in a minimalist industrial loft workspace. The shot is high-key with cool tones and sharp focus, reflecting a clean, innovative educational outcome." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeOS6PcDSd1KbmxkoUHH1K48rRWy-jzS87E2Iz_f6gc-PfDJIIpiHaX5q5FAGATTXN0Rrpv-bmU0d-iFtCcn5Wj0eQCF25JCmUfvmS6ZZEx4HfR9fbcUMwTKnxuuOJt6PfuDjnIrkGiUYBOVKTcIW9mN8ifkT6DCfKThThN8Q9Au0P7ACbCZ6O498IXMZyYRPxZIguRVMMfwK_UzqVAcBpW4ERP0DMAUAyMYOu3rOtzKP3g3rASl4g"/>
+</div>
+<div>
+<p class="font-bold">Marcus Thorne</p>
+<p class="text-label text-on-surface-variant">Lead AI Architect, NexaCorp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-desktop py-section-v-desktop max-w-container-max mx-auto text-center">
+<div class="max-w-3xl mx-auto animate-fade-up">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Build the Future of Learning.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Whether you are an institution seeking digital transformation or a professional seeking mastery, Learnixa provides the structure for your growth.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-[8px] font-label text-label uppercase tracking-widest hover:scale-105 transition-transform">Inquire Now</button>
+<button class="border border-primary text-primary px-10 py-5 rounded-[8px] font-label text-label uppercase tracking-widest hover:bg-surface-container transition-colors">Download Prospectus</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container w-full mt-section-v-desktop border-t border-outline/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<span class="font-headline-md text-headline-md text-on-primary mb-6 block">RAHA GROUP</span>
+<p class="font-body-md text-body-md opacity-80 max-w-xs">Advancing humanity through architectural integrity, sustainable infrastructure, and transformative education.</p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label text-label text-on-primary uppercase tracking-widest mb-6">Divisions</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Raha Infra</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim" href="#">Learnixa</a></li>
+<li><a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Big Think</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label text-label text-on-primary uppercase tracking-widest mb-6">Corporate</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Investor Relations</a></li>
+<li><a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label text-label text-on-primary uppercase tracking-widest mb-6">Newsletter</h4>
+<div class="flex border-b border-outline/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-primary placeholder:text-on-primary-container/50" placeholder="Email Address" type="email"/>
+<button class="text-on-primary"><span class="material-symbols-outlined">east</span></button>
+</div>
+</div>
+<div class="col-span-12 pt-16 mt-16 border-t border-outline/10 flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="font-body-md text-body-md opacity-60">© 2024 Raha Group. All rights reserved. Architectural Integrity & Innovation.</p>
+<div class="flex gap-8">
+<a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md hover:text-on-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-up').forEach(el => {
+            el.style.opacity = '0'; // Initial state for JS-driven animations
+            observer.observe(el);
+        });
+
+        // Simple parallax or micro-interactions could be added here
+    </script>
+</body></html>

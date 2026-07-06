@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RAHA GROUP | Architectural Prestige in Motion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+        }
+        .reveal-on-scroll.visible {
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#2f312f",
+                      "on-tertiary-fixed": "#0e1c30",
+                      "surface-dim": "#dbdad7",
+                      "primary": "#000000",
+                      "outline": "#747878",
+                      "on-secondary": "#ffffff",
+                      "inverse-primary": "#c8c6c5",
+                      "secondary-fixed-dim": "#e3c285",
+                      "on-secondary-fixed": "#261900",
+                      "primary-container": "#1c1b1b",
+                      "primary-fixed": "#e5e2e1",
+                      "on-primary": "#ffffff",
+                      "background": "#faf9f6",
+                      "tertiary": "#000000",
+                      "on-secondary-fixed-variant": "#594312",
+                      "tertiary-container": "#0e1c30",
+                      "surface-bright": "#faf9f6",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-tertiary-fixed-variant": "#3a475d",
+                      "tertiary-fixed-dim": "#bac7e2",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#ffdea3",
+                      "on-surface-variant": "#444748",
+                      "surface": "#faf9f6",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#c4c7c7",
+                      "on-surface": "#1a1c1a",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e9e8e5",
+                      "surface-tint": "#5f5e5e",
+                      "on-primary-fixed-variant": "#474646",
+                      "surface-variant": "#e3e2df",
+                      "on-primary-container": "#858383",
+                      "inverse-on-surface": "#f2f1ee",
+                      "tertiary-fixed": "#d5e3ff",
+                      "secondary": "#735b28",
+                      "secondary-container": "#fedb9c",
+                      "surface-container-low": "#f4f3f0",
+                      "on-primary-fixed": "#1c1b1b",
+                      "surface-container-highest": "#e3e2df",
+                      "surface-container": "#efeeeb",
+                      "on-secondary-container": "#785f2b",
+                      "on-tertiary-container": "#77849d",
+                      "on-background": "#1a1c1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "8px",
+                      "xl": "12px",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "24px",
+                      "stack-sm": "12px",
+                      "section-v-desktop": "120px",
+                      "stack-md": "24px",
+                      "stack-lg": "48px",
+                      "container-max": "1280px",
+                      "margin-desktop": "80px",
+                      "gutter": "32px",
+                      "section-v-mobile": "48px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "label": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "eyebrow": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "headline-md-mobile": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                      "label": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.7", "letterSpacing": "0em", "fontWeight": "400"}],
+                      "eyebrow": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.7", "letterSpacing": "0em", "fontWeight": "400"}],
+                      "headline-md": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["44px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md-mobile": ["28px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-600 ease-[0.16,1,0.3,1] border-b border-outline/10 bg-transparent" id="navbar">
+<div class="flex justify-between items-center px-margin-desktop py-stack-md w-full max-w-container-max mx-auto">
+<div class="font-display-lg text-[24px] tracking-tighter text-primary">RAHA GROUP</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label text-label text-primary font-bold border-b-2 border-primary pb-1" href="#">Our Vision</a>
+<a class="font-label text-label text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Industries</a>
+<a class="font-label text-label text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Sustainability</a>
+<a class="font-label text-label text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Careers</a>
+<a class="font-label text-label text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">News</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label text-label hover:opacity-90 transition-all">
+                Contact Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full" data-alt="A cinematic, low-angle shot of a sprawling modern architectural complex with sharp geometric lines and glass facades reflecting a soft sunrise. The lighting is ethereal and high-key, emphasizing structural integrity and prestige. The color palette consists of pristine whites, muted greys, and deep shadows, creating an editorial and authoritative mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDgLAqbrRnD3ucM3h-ybXot8GCruUZzxG68G6jrYCDNqC7jy_iLkwT0Y7wtBrWZAKu68oszFdd0nofrSBO2iI8SsBOLI5G3-5N76TH-zwDG5j15rFiLiT2pmZqhyKLZF7m_jWU6oCcClKD2fPwC2kHwRiS9mXn1X2AvfpThRNqyH5OcMp6cuyjuoItmO_GrXFaXEAj5T2saT0BjyxYVhpTGm5iFnLvMpE4mrfctM5LH4Ji3gqT_8ju')"></div>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 px-margin-desktop w-full max-w-container-max mx-auto animate-fade-up">
+<div class="max-w-4xl">
+<p class="font-eyebrow text-eyebrow text-on-primary uppercase mb-6 tracking-widest">Architectural Prestige</p>
+<h1 class="font-display-lg text-display-lg text-white mb-10 leading-none">
+                    Building Businesses That <br/>Shape Tomorrow
+                </h1>
+<div class="flex gap-gutter">
+<button class="bg-white text-primary px-10 py-5 rounded-lg font-label text-label font-bold hover:scale-105 transition-all">
+                        Explore Our Verticals
+                    </button>
+<button class="border border-white text-white px-10 py-5 rounded-lg font-label text-label font-bold hover:bg-white/10 transition-all">
+                        Investor Relations
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-v-desktop px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter items-center reveal-on-scroll">
+<div class="col-span-12 md:col-span-5">
+<p class="font-eyebrow text-eyebrow text-secondary mb-4 uppercase tracking-[0.2em]">Our Legacy</p>
+<h2 class="font-headline-md text-headline-md mb-8">A Group Built on Long-Term Thinking</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    RAHA Group transcends traditional business boundaries. We are architects of industry, strategically investing in sectors that define the human experience—from the infrastructure we inhabit to the technologies that empower our future. Our philosophy is rooted in silence, clarity, and deliberate action.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
+<div class="w-full h-full" data-alt="A minimalist overhead view of a high-end corporate boardroom with a large marble table and designer chairs. The room is flooded with natural light from floor-to-ceiling windows. The aesthetic is clean, luxurious, and organized, reflecting a calm atmosphere of strategic decision-making. Global leadership and long-term vision are the central themes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLs2cer2pQMLX2YOJgM-q-gzTpIdmvmt1K8bORiryd59sVQkIZOFzzsvKnbgpyC7JpOuOy96eaxCKnE6L0i0BexN6CqiSKwPHR1Kd9WfmBdTRYTlMmjTsbElgc5QgVu3Seew57rYKd-jCE3Q6V9oFMd6xaAew4HbWfIGFaBaodvbXtc-pHFf1akjZR5OXnxorocO5Z3NWi90g4FN_LzViZLGw-vK63IMRGn0Jo64Njfgj52fWqGIcH')"></div>
+</div>
+</div>
+</div>
+<div class="mt-section-v-desktop border-t border-outline/10 pt-16 reveal-on-scroll">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-center md:text-left">
+<div>
+<div class="font-display-lg text-headline-md text-primary mb-2">15,000+</div>
+<div class="font-label text-label text-on-surface-variant uppercase tracking-wider">People Served Daily</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-md text-primary mb-2">3+</div>
+<div class="font-label text-label text-on-surface-variant uppercase tracking-wider">Major Business Verticals</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-md text-primary mb-2">100%</div>
+<div class="font-label text-label text-on-surface-variant uppercase tracking-wider">Commitment to Quality</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Verticals Section -->
+<section class="bg-surface-container-low py-section-v-desktop">
+<div class="px-margin-desktop max-w-container-max mx-auto space-y-32">
+<!-- Raha Infra -->
+<div class="grid grid-cols-12 gap-gutter items-center reveal-on-scroll">
+<div class="col-span-12 md:col-span-6 rounded-xl overflow-hidden h-[450px]">
+<div class="w-full h-full" data-alt="A wide-angle landscape shot of a massive infrastructure project involving sleek, modern bridges and urban planning under construction. The style is crisp and editorial, focusing on the structural complexity and engineering marvel. The lighting is golden-hour, casting long shadows that highlight the textures of steel and concrete." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIZYmeUprJUsZG-2NGPAoQdb5LMqFkcCWmMbN-bAQG9ShgHN7b8XxddHeNMT7keHm2As06ZjOE3-HnqGQ2W_ZPOdTPHUdMiXLf4fzvyNNovJocnBvx57Aj5aHkKKb_OkUuKKDKYB6FNctjJNvukpc3mOAN5ZpoUagPY2kUkCEMTpQg9XDwuZmkmdgC08cN6Eq1c___9vQb08S4FtJTxAjgT_gga-1oRbkH2BtoFDPfycNbcLPP-1Tg')"></div>
+</div>
+<div class="col-span-12 md:col-span-5 md:col-start-8">
+<h3 class="font-headline-md text-headline-md mb-6">Raha Infra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Redefining urban landscapes through sustainable civil engineering and visionary urban planning. Our projects are built to last generations.</p>
+<button class="group flex items-center font-label text-label font-bold text-primary">
+                        VIEW PROJECTS 
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Learnixa Education -->
+<div class="grid grid-cols-12 gap-gutter items-center reveal-on-scroll">
+<div class="col-span-12 md:col-span-5 order-2 md:order-1">
+<h3 class="font-headline-md text-headline-md mb-6">Learnixa Education</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Empowering the next generation with cutting-edge curricula and state-of-the-art learning environments designed for the digital age.</p>
+<button class="group flex items-center font-label text-label font-bold text-primary">
+                        EXPLORE CAMPUSES
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 order-1 md:order-2 rounded-xl overflow-hidden h-[450px]">
+<div class="w-full h-full" data-alt="An interior shot of a futuristic classroom with minimalist wooden desks, advanced interactive screens, and students engaged in collaborative work. The lighting is soft and natural. The palette features warm wood tones against clean white walls, emphasizing a nurturing yet sophisticated learning atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3XJdE8jnE0-da5VxB7sDuoIhIRhWVHkdLm1VtsVzt-YShB64HL_TrQ3r21oQ0gkXRj5IySsNFK3KRnzScrukNhygOQWBdMGvQHCUVNgDhMOMde-R_sc-psgohB_sX6fUP77swkRRyqLD_7ACQGxsQceR_kffbvDf_F4QjVIMkuUI4Un_bxLuYjMqHq2857LQPcqYZ_IjlweuoRTMp6yzqQdvoaiEYfTqwyVFtMaisFuiWXymisoQ2')"></div>
+</div>
+</div>
+<!-- Big Think Technology -->
+<div class="grid grid-cols-12 gap-gutter items-center reveal-on-scroll">
+<div class="col-span-12 md:col-span-6 rounded-xl overflow-hidden h-[450px]">
+<div class="w-full h-full" data-alt="A macro shot of high-tech circuitry glowing with subtle blue and gold lights. The focus is sharp on a central processing chip with the 'Raha Group' branding etched subtly. The background is a dark, sophisticated tech-canvas with ethereal light bokeh. High-end, precise, and innovative." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAquu-YhuAMlVTfvM5vC8u2Jnis1EaQ8LPWI8LfUgt9vupCfzCCzX9k2dT5ixclK7rHBZfYzk_weIZ5oWky8q31wA8cUXj5LfD1rzQBaEF_qAHcZt6QyBIAagaoME35SQEPf-jYzJgcq3PIIHeczmymSwaOyFdOdd49qs__Kib1dAQLLdNntJsGPaHIaK3U_e5u6402-y4OBdqGE2ETsBiKc9UTdoa4GXbsKnVqSljCx0Y-K-wtQSHE')"></div>
+</div>
+<div class="col-span-12 md:col-span-5 md:col-start-8">
+<h3 class="font-headline-md text-headline-md mb-6">Big Think Technology</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Pioneering digital transformation and AI integration for global enterprises. We solve tomorrow's problems today.</p>
+<button class="group flex items-center font-label text-label font-bold text-primary">
+                        LEARN MORE
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-v-desktop px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="text-center mb-24 reveal-on-scroll">
+<p class="font-eyebrow text-eyebrow text-secondary mb-4 uppercase tracking-[0.2em]">Our Framework</p>
+<h2 class="font-headline-md text-headline-md">The Architectural Process</h2>
+</div>
+<div class="relative reveal-on-scroll">
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-outline/20 -translate-y-1/2 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10">
+<!-- Step 01 -->
+<div class="bg-background md:pr-10">
+<div class="flex flex-col">
+<span class="font-display-lg text-primary/10 text-[100px] leading-none mb-4">01</span>
+<h4 class="font-headline-md text-headline-md-mobile mb-4">Understand</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We begin with deep immersion, identifying core market needs and untapped potential in the global landscape.</p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-background md:px-10">
+<div class="flex flex-col">
+<span class="font-display-lg text-primary/10 text-[100px] leading-none mb-4">02</span>
+<h4 class="font-headline-md text-headline-md-mobile mb-4">Strategize</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our innovation lab develops rigorous frameworks to scale businesses with architectural precision and resilience.</p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-background md:pl-10">
+<div class="flex flex-col">
+<span class="font-display-lg text-primary/10 text-[100px] leading-none mb-4">03</span>
+<h4 class="font-headline-md text-headline-md-mobile mb-4">Execute</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Flawless implementation backed by our 100% commitment to quality and operational excellence.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Opportunities Section (Dark Charcoal) -->
+<section class="bg-primary-container py-section-v-desktop">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5 text-on-primary">
+<p class="font-eyebrow text-eyebrow text-secondary-fixed-dim mb-4 uppercase tracking-[0.2em]">Growth</p>
+<h2 class="font-headline-md text-headline-md mb-8">Strategic Opportunities</h2>
+<p class="font-body-lg text-body-lg opacity-80 mb-12">We are constantly identifying new horizons. Join us as we build the foundations of the next industrial era.</p>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-4 rounded-lg font-label text-label font-bold hover:opacity-90 transition-all">
+                    Partner With Us
+                </button>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 space-y-6">
+<div class="bg-white/5 p-10 rounded-xl border border-white/10 hover:border-secondary-fixed-dim/50 transition-colors cursor-pointer group">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-md text-headline-md-mobile text-white">Investment Ventures</h4>
+<span class="material-symbols-outlined text-secondary-fixed-dim group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+<p class="mt-4 text-on-surface-variant font-body-md">High-impact capital deployment in emerging markets.</p>
+</div>
+<div class="bg-white/5 p-10 rounded-xl border border-white/10 hover:border-secondary-fixed-dim/50 transition-colors cursor-pointer group">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-md text-headline-md-mobile text-white">Career Acceleration</h4>
+<span class="material-symbols-outlined text-secondary-fixed-dim group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+<p class="mt-4 text-on-surface-variant font-body-md">Empowering leaders to scale within our ecosystem.</p>
+</div>
+<div class="bg-white/5 p-10 rounded-xl border border-white/10 hover:border-secondary-fixed-dim/50 transition-colors cursor-pointer group">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-md text-headline-md-mobile text-white">Global Distribution</h4>
+<span class="material-symbols-outlined text-secondary-fixed-dim group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+<p class="mt-4 text-on-surface-variant font-body-md">Scaling supply chain excellence across continents.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Future Section (Deep Navy) -->
+<section class="bg-tertiary-container py-section-v-desktop relative overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-24 reveal-on-scroll">
+<p class="font-eyebrow text-eyebrow text-tertiary-fixed mb-4 uppercase tracking-[0.2em]">Next Horizons</p>
+<h2 class="font-headline-md text-headline-md text-white">The Future of Raha</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter reveal-on-scroll">
+<div class="glass-card p-12 rounded-xl">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">wb_sunny</span>
+<h4 class="font-headline-md text-white mb-4">Solar &amp; Renewables</h4>
+<p class="text-tertiary-fixed opacity-70 font-body-md">Investing in the decentralized power grid of tomorrow. Clean energy at architectural scale.</p>
+</div>
+<div class="glass-card p-12 rounded-xl">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">bolt</span>
+<h4 class="font-headline-md text-white mb-4">Conventional Energy</h4>
+<p class="text-tertiary-fixed opacity-70 font-body-md">Optimizing legacy systems for maximum efficiency and reduced carbon footprint.</p>
+</div>
+<div class="glass-card p-12 rounded-xl">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">groups</span>
+<h4 class="font-headline-md text-white mb-4">Specialized Manpower</h4>
+<p class="text-tertiary-fixed opacity-70 font-body-md">Training and deploying technical experts for the world's most complex projects.</p>
+</div>
+<div class="glass-card p-12 rounded-xl">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">rocket_launch</span>
+<h4 class="font-headline-md text-white mb-4">Future Ventures</h4>
+<p class="text-tertiary-fixed opacity-70 font-body-md">Space-tech and biotech explorations sitting at the edge of human achievement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-section-v-desktop px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter items-center reveal-on-scroll">
+<div class="col-span-12 md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full" data-alt="A professional, editorial portrait of a CEO in a high-end tailored suit. The background is a minimalist grey office. The lighting is dramatic and Rembrandt-style, conveying authority, wisdom, and confidence. The image is crisp and clean, suitable for a prestigious corporate website." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWirXvTltqwybF6j19N4OJobcrawzWE0aiUReSlRSlkv6ExTutXY4ZKS4P-myAkFVBYMs_f2oOOYEtuo2yMJRBZqmyvFx0tJ80fob-y3fAc8RcW0LI7PLYcpIS8H-4EvR_gr2hicmvvfADT9Tq9PJS7RPMltI-AaLd4K77cMHFmRwHGA6fwNkSTShBa5VBVPMmlBoJJVcmDf6LiX3wzdJxM5isjbapSDUuPm7-2tDFqR6N7V1MQMn-')"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary px-8 py-4 text-white font-label text-label">
+                    FOUNDER &amp; CHAIRMAN
+                </div>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-8">
+<span class="material-symbols-outlined text-6xl text-secondary-fixed-variant mb-8">format_quote</span>
+<blockquote class="font-headline-md text-headline-md leading-tight mb-8">
+                    "We don't build for the quarter. We build for the century. True prestige comes from the silent strength of lasting contributions to society."
+                </blockquote>
+<div class="h-px w-20 bg-primary mb-4"></div>
+<p class="font-display-lg text-2xl">Zaid Al-Raha</p>
+<p class="font-label text-label text-on-surface-variant uppercase tracking-widest mt-1">Visionary Leader, Raha Group</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container py-section-v-desktop text-center">
+<div class="px-margin-desktop max-w-3xl mx-auto reveal-on-scroll">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-10 leading-none">Let's Build the Future Together</h2>
+<p class="font-body-lg text-white/70 mb-12">Whether you're looking to invest, partner, or join our global team, the journey starts here.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-12 py-5 rounded-lg font-label text-label font-bold hover:scale-105 transition-all">
+                    Inquire for Partnership
+                </button>
+<button class="border border-white/30 text-white px-12 py-5 rounded-lg font-label text-label font-bold hover:bg-white/10 transition-all">
+                    Corporate Presentation
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-on-secondary py-section-v-desktop border-t border-outline/10">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto reveal-on-scroll">
+<div class="col-span-12 md:col-span-4 mb-12 md:mb-0">
+<div class="font-display-lg text-[32px] text-on-secondary mb-6">RAHA GROUP</div>
+<p class="font-body-md opacity-60 max-w-xs">A global conglomerate dedicated to industrial prestige and architectural excellence across the physical and digital world.</p>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h5 class="font-label text-label font-bold text-white mb-6 uppercase tracking-widest">Company</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant/70">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Strategic Pillars</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Innovation Lab</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Investor Relations</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h5 class="font-label text-label font-bold text-white mb-6 uppercase tracking-widest">Connect</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant/70">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Global Presence</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Ethics &amp; Governance</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-4 mt-12 md:mt-0">
+<h5 class="font-label text-label font-bold text-white mb-6 uppercase tracking-widest">Global HQ</h5>
+<p class="font-body-md text-on-surface-variant/70">101 Financial District, Tower A<br/>Metropolis City, 4500-11</p>
+<div class="mt-8 flex gap-4">
+<a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span>
+</a>
+<a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 mt-24 border-t border-white/10 pt-10 text-center md:text-left">
+<p class="font-body-md text-on-surface-variant/70">© 2024 Raha Group. All rights reserved. Architectural Prestige in Motion.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-sm', 'py-4');
+                nav.classList.remove('bg-transparent', 'py-stack-md');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-sm', 'py-4');
+                nav.classList.add('bg-transparent', 'py-stack-md');
+            }
+        });
+    </script>
+</body></html>
