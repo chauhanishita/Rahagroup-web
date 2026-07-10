@@ -132,7 +132,7 @@ export default function Infra() {
           </div>
         </section>
 
-        {/* Leadership Highlight (Marcus Thorne) */}
+        {/* Leadership Highlight (Rahul Kumar) */}
         <section className="py-20 md:py-28 px-6 md:px-20 max-w-[1280px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-5 relative">
@@ -144,9 +144,6 @@ export default function Infra() {
                   }}
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-secondary px-6 py-3 text-white font-inter text-xs font-bold uppercase tracking-wider">
-                PROJECT DIRECTOR
-              </div>
             </div>
             <div className="md:col-span-6 md:col-start-8">
               <span className="material-symbols-outlined text-6xl text-[#735b28] mb-6">format_quote</span>
@@ -154,8 +151,8 @@ export default function Infra() {
                 &quot;True luxury in civil architecture resides in the absolute safety of structural integrity. We construct environments that will stand as legacy landmarks.&quot;
               </blockquote>
               <div className="h-px w-20 bg-black mb-4"></div>
-              <p className="font-plus-jakarta text-xl font-bold text-black">Marcus Thorne</p>
-              <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Project Director, Raha Infra</p>
+              <p className="font-plus-jakarta text-xl font-bold text-black">Rahul Kumar</p>
+              <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Raha Infra</p>
             </div>
           </div>
         </section>

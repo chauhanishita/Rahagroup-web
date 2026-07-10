@@ -25,7 +25,7 @@ export default function Learnixa() {
               <div 
                 className="w-full h-full bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('/images/education.png')",
+                  backgroundImage: "url('/images/education_new.png')",
                 }}
               />
             </div>
@@ -82,35 +82,6 @@ export default function Learnixa() {
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
                 Machine learning algorithms mapping content recommendations directly to student profiles.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Faculty & Advisory */}
-        <section className="bg-black text-white py-28 mb-20 md:mb-28">
-          <div className="px-6 md:px-20 max-w-[1280px] mx-auto">
-            <div className="mb-16 text-center">
-              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest block mb-4">BOARD OF TRUSTEES</span>
-              <h2 className="font-plus-jakarta text-3xl md:text-5xl font-extrabold text-white">Faculty &amp; Advisory</h2>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
-                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Dr. Helena Vane</div>
-                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Medical Academic Dean</div>
-              </div>
-              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
-                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Marcus Thorne</div>
-                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Curriculum Director</div>
-              </div>
-              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
-                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Sarah Lin</div>
-                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Global Placements Head</div>
-              </div>
-              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
-                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Julian Reed</div>
-                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Regulatory Affairs Advisor</div>
-              </div>
             </div>
           </div>
         </section>

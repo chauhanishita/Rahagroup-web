@@ -35,31 +35,31 @@ export default function Navbar() {
     switch (pathname) {
       case "/infra":
         return {
-          src: "/images/Raha infra.jpeg",
+          src: "/images/Raha_infra.svg",
           alt: "Raha Infra Logo",
           invertible: false,
         };
       case "/energy":
         return {
-          src: "/images/Raha Energy Logo .png",
+          src: "/images/Raha_Energy_Logo.svg",
           alt: "Raha Energy Logo",
           invertible: true,
         };
       case "/learnixa":
         return {
-          src: "/images/Learnixa.jpeg",
+          src: "/images/Learnixa.svg",
           alt: "Learnixa Logo",
           invertible: false,
         };
       case "/bigthink":
         return {
-          src: "/images/Big think.jpeg",
+          src: "/images/Big_think.svg",
           alt: "Big Think Logo",
           invertible: false,
         };
       default:
         return {
-          src: "/images/Raha Group Logo .png",
+          src: "/images/Raha_Group_Logo.svg",
           alt: "Raha Group Logo",
           invertible: true,
         };
@@ -83,15 +83,11 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center px-6 md:px-20 w-full max-w-[1280px] mx-auto">
         <Link href="/" className="flex items-center">
-          <div className={`transition-all duration-300 ${!currentLogo.invertible && !shouldShowScrolled ? "bg-white p-1.5 rounded-lg shadow-md" : ""}`}>
-            <img 
-              src={currentLogo.src} 
-              alt={currentLogo.alt} 
-              className={`h-10 w-auto object-contain transition-all duration-300 ${
-                !currentLogo.invertible && shouldShowScrolled ? "mix-blend-multiply" : ""
-              }`} 
-            />
-          </div>
+          <img 
+            src={currentLogo.src} 
+            alt={currentLogo.alt} 
+            className="h-20 w-auto object-contain transition-all duration-300 hover:scale-105" 
+          />
         </Link>
         
         {/* Desktop nav */}
@@ -116,7 +112,7 @@ export default function Navbar() {
 
         {/* Action Button & Mobile Menu Toggle */}
         <div className="flex items-center gap-4">
-          <Link
+          <a
             href="/#contact"
             className={`hidden sm:inline-block px-6 py-2.5 rounded-lg font-inter text-sm font-semibold transition-all ${
               shouldShowScrolled
@@ -125,7 +121,7 @@ export default function Navbar() {
             }`}
           >
             Contact Us
-          </Link>
+          </a>
           
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

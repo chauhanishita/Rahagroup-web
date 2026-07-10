@@ -23,9 +23,9 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="mt-12 w-full h-[350px] md:h-[600px] overflow-hidden rounded-xl shadow-xl">
+          <div className="mt-12 w-full h-[350px] md:h-[600px] rounded-xl shadow-xl reveal-on-scroll img-zoom-container">
             <div 
-              className="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105" 
+              className="w-full h-full bg-cover bg-center" 
               style={{
                 backgroundImage: "url('/images/boardroom.png')",
               }}
@@ -36,7 +36,7 @@ export default function About() {
         {/* Our Story Editorial */}
         <section className="px-6 md:px-20 max-w-[1280px] mx-auto mb-20 md:mb-28 py-16 md:py-24 bg-[#efeeeb]/50 rounded-2xl">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="md:col-start-3 md:col-span-8">
+            <div className="md:col-start-3 md:col-span-8 reveal-on-scroll">
               <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold mb-8 text-black">Our Institutional Journey</h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-on-surface-variant">
                 <p>
@@ -52,7 +52,6 @@ export default function About() {
                   <div className="space-y-12 relative before:absolute before:left-4 before:top-2 before:bottom-2 before:w-[2px] before:bg-secondary/20">
                     <div className="relative pl-12">
                       <div className="absolute left-[11px] top-1.5 w-3.5 h-3.5 rounded-full bg-secondary border-4 border-white" />
-                      <span className="font-plus-jakarta text-lg font-bold text-secondary">1994</span>
                       <h4 className="font-plus-jakarta text-xl font-bold text-black mt-2">The Inception</h4>
                       <p className="font-inter text-sm text-on-surface-variant mt-2 leading-relaxed">
                         Raha Group is founded, establishing its core values through civil infrastructure projects in northern India.
@@ -60,7 +59,6 @@ export default function About() {
                     </div>
                     <div className="relative pl-12">
                       <div className="absolute left-[11px] top-1.5 w-3.5 h-3.5 rounded-full bg-secondary border-4 border-white" />
-                      <span className="font-plus-jakarta text-lg font-bold text-secondary">2005</span>
                       <h4 className="font-plus-jakarta text-xl font-bold text-black mt-2">Continental Expansion</h4>
                       <p className="font-inter text-sm text-on-surface-variant mt-2 leading-relaxed">
                         Diversification into multi-sector ventures including real estate investment portfolios and energy distribution systems.
@@ -68,7 +66,6 @@ export default function About() {
                     </div>
                     <div className="relative pl-12">
                       <div className="absolute left-[11px] top-1.5 w-3.5 h-3.5 rounded-full bg-secondary border-4 border-white" />
-                      <span className="font-plus-jakarta text-lg font-bold text-secondary">2014</span>
                       <h4 className="font-plus-jakarta text-xl font-bold text-black mt-2">Intellectual Pivot</h4>
                       <p className="font-inter text-sm text-on-surface-variant mt-2 leading-relaxed">
                         Acquiring technology assets and launching EdTech verticals to build a future-ready, diversified corporate ecosystem.
@@ -76,7 +73,6 @@ export default function About() {
                     </div>
                     <div className="relative pl-12">
                       <div className="absolute left-[11px] top-1.5 w-3.5 h-3.5 rounded-full bg-secondary border-4 border-white" />
-                      <span className="font-plus-jakarta text-lg font-bold text-secondary">Today</span>
                       <h4 className="font-plus-jakarta text-xl font-bold text-black mt-2">Institutional Presence</h4>
                       <p className="font-inter text-sm text-on-surface-variant mt-2 leading-relaxed">
                         A recognized market leader delivering excellence through specialized divisions across real estate, clean energy, and IT.

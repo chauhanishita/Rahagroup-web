@@ -16,7 +16,10 @@
   --font-inter: "Inter", sans-serif;
 }
 
+html,
 body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-inter);
@@ -46,8 +49,44 @@ body {
 
 .reveal-on-scroll {
   opacity: 0;
+  transform: translateY(35px) scale(0.98);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 .reveal-on-scroll.visible {
-  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Premium card hover transitions */
+.hover-card-premium {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, box-shadow;
+}
+
+.hover-card-premium:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(115, 91, 40, 0.2) !important;
+}
+
+/* Image zoom-in container hover effects */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img, 
+.img-zoom-container .bg-cover,
+.img-zoom-container div[style*="background-image"] {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.img-zoom-container:hover img, 
+.img-zoom-container:hover .bg-cover,
+.img-zoom-container:hover div[style*="background-image"] {
+  transform: scale(1.06) !important;
 }

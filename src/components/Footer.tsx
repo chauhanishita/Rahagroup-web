@@ -11,31 +11,31 @@ export default function Footer() {
     switch (pathname) {
       case "/infra":
         return {
-          src: "/images/Raha infra.jpeg",
+          src: "/images/Raha_infra.svg",
           alt: "Raha Infra Logo",
           invertible: false,
         };
       case "/energy":
         return {
-          src: "/images/Raha Energy Logo .png",
+          src: "/images/Raha_Energy_Logo.svg",
           alt: "Raha Energy Logo",
           invertible: true,
         };
       case "/learnixa":
         return {
-          src: "/images/Learnixa.jpeg",
+          src: "/images/Learnixa.svg",
           alt: "Learnixa Logo",
           invertible: false,
         };
       case "/bigthink":
         return {
-          src: "/images/Big think.jpeg",
+          src: "/images/Big_think.svg",
           alt: "Big Think Logo",
           invertible: false,
         };
       default:
         return {
-          src: "/images/Raha Group Logo .png",
+          src: "/images/Raha_Group_Logo.svg",
           alt: "Raha Group Logo",
           invertible: true,
         };
@@ -49,13 +49,11 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 px-6 md:px-20 w-full max-w-[1280px] mx-auto">
         <div className="md:col-span-4 mb-8 md:mb-0">
           <div className="flex items-center mb-6">
-            <div className={`transition-all duration-300 ${!currentLogo.invertible ? "bg-white p-2 rounded-lg shadow-md" : ""}`}>
-              <img 
-                src={currentLogo.src} 
-                alt={currentLogo.alt} 
-                className="h-12 w-auto object-contain" 
-              />
-            </div>
+            <img 
+              src={currentLogo.src} 
+              alt={currentLogo.alt} 
+              className="h-24 w-auto object-contain" 
+            />
           </div>
           <p className="font-inter text-sm text-white/60 max-w-xs leading-relaxed mb-4">
             A global conglomerate dedicated to industrial prestige and architectural excellence across the physical and digital world.
@@ -66,26 +64,36 @@ export default function Footer() {
             <p>Web: <a href="https://www.rahagroup.co.in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">www.rahagroup.co.in</a></p>
           </div>
         </div>
+
+        <div className="md:col-span-4 mb-8 md:mb-0">
+          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Our Mission &amp; Vision</h5>
+          <div className="space-y-4">
+            <div>
+              <h6 className="font-plus-jakarta text-xs font-bold text-[#fedb9c] uppercase mb-1">Mission</h6>
+              <p className="font-inter text-xs text-white/60 leading-relaxed">
+                To consistently deliver high-quality solutions through professionalism, transparency, and deep market understanding, enabling our clients to achieve their long-term goals.
+              </p>
+            </div>
+            <div>
+              <h6 className="font-plus-jakarta text-xs font-bold text-[#fedb9c] uppercase mb-1">Vision</h6>
+              <p className="font-inter text-xs text-white/60 leading-relaxed">
+                To become one of India&apos;s most trusted multi-business organizations by delivering innovative solutions, empowering businesses, and creating opportunities across diverse industries.
+              </p>
+            </div>
+          </div>
+        </div>
         
         <div className="col-span-6 md:col-span-2">
-          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Company</h5>
+          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Links</h5>
           <ul className="space-y-4 font-inter text-sm text-white/50">
             <li><Link href="/#pillars" className="hover:text-white transition-colors">Strategic Pillars</Link></li>
-            <li><Link href="/#innovation" className="hover:text-white transition-colors">Innovation Lab</Link></li>
             <li><Link href="/#investor" className="hover:text-white transition-colors">Investor Relations</Link></li>
-          </ul>
-        </div>
-
-        <div className="col-span-6 md:col-span-2">
-          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Connect</h5>
-          <ul className="space-y-4 font-inter text-sm text-white/50">
             <li><Link href="/#presence" className="hover:text-white transition-colors">Global Presence</Link></li>
-            <li><Link href="/#governance" className="hover:text-white transition-colors">Ethics &amp; Governance</Link></li>
-            <li><Link href="/#privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/#governance" className="hover:text-white transition-colors">Governance</Link></li>
           </ul>
         </div>
 
-        <div className="md:col-span-4 mt-8 md:mt-0">
+        <div className="md:col-span-2 mt-8 md:mt-0">
           <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Global HQ</h5>
           <p className="font-inter text-sm text-white/50 leading-relaxed">
             101 Financial District, Tower A<br />Metropolis City, 4500-11

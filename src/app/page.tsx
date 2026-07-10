@@ -25,6 +25,10 @@ export default function Home() {
           
           <div className="relative z-10 px-20 w-full max-w-[1280px] mx-auto animate-fade-up">
             <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6 transition-all hover:bg-white/15">
+                <img src="/images/Raha_Group_Logo.svg" alt="Raha Group Logo" className="h-16 w-auto object-contain" />
+                <span className="font-inter text-xs font-bold text-white uppercase tracking-widest pr-1">Raha Group</span>
+              </div>
               <p className="font-inter text-xs font-bold text-white uppercase mb-4 tracking-widest">
                 Architectural Prestige
               </p>
@@ -52,7 +56,7 @@ export default function Home() {
         {/* Desktop About Section */}
         <section className="py-28 px-20 max-w-[1280px] mx-auto">
           <div className="grid grid-cols-12 gap-12 items-center">
-            <div className="col-span-6">
+            <div className="col-span-6 reveal-on-scroll">
               <p className="font-inter text-xs font-bold text-secondary mb-4 uppercase tracking-[0.2em]">About Our Company</p>
               <h2 className="font-plus-jakarta text-4xl font-extrabold mb-6 leading-tight text-black">
                 Raha Group
@@ -76,7 +80,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-span-6 col-start-7">
-              <div className="relative h-[450px] rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative h-[450px] rounded-xl overflow-hidden shadow-2xl reveal-on-scroll img-zoom-container">
                 <div 
                   className="w-full h-full bg-cover bg-center" 
                   style={{ 
@@ -118,26 +122,26 @@ export default function Home() {
         
         {/* Core Principles (New Section) */}
         <section className="py-28 px-20 max-w-[1280px] mx-auto border-t border-black/5">
-          <div className="text-center mb-20 animate-fade-up">
+          <div className="text-center mb-20 reveal-on-scroll">
             <span className="font-inter text-xs font-bold text-secondary uppercase tracking-widest mb-4 block">GUIDING ETHOS</span>
             <h2 className="font-plus-jakarta text-4xl font-extrabold text-black">Core Principles</h2>
           </div>
           <div className="grid grid-cols-3 gap-8">
-            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+            <div className="p-8 border border-black/5 rounded-xl group reveal-on-scroll hover-card-premium">
               <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">update</span>
               <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Long-Term Thinking</h4>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
                 We prioritize legacy over quick wins, investing in assets that provide value for decades to come.
               </p>
             </div>
-            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+            <div className="p-8 border border-black/5 rounded-xl group reveal-on-scroll hover-card-premium">
               <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">visibility</span>
               <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Absolute Transparency</h4>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
                 Radical honesty in governance and reporting ensures trust with stakeholders and partners.
               </p>
             </div>
-            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+            <div className="p-8 border border-black/5 rounded-xl group reveal-on-scroll hover-card-premium">
               <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">precision_manufacturing</span>
               <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Structural Integrity</h4>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
@@ -152,15 +156,15 @@ export default function Home() {
           <div className="px-20 max-w-[1280px] mx-auto space-y-32">
             {/* Raha Infra */}
             <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-6 rounded-xl overflow-hidden h-[450px]">
+              <div className="col-span-6 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
                 <div 
-                  className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full bg-cover bg-center" 
                   style={{ 
                     backgroundImage: "url('/images/infra.png')",
                   }}
                 />
               </div>
-              <div className="col-span-5 col-start-8">
+              <div className="col-span-5 col-start-8 reveal-on-scroll">
                 <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Real Estate</div>
                 <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Raha Infra</h3>
                 <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
@@ -175,7 +179,7 @@ export default function Home() {
 
             {/* Learnixa Education */}
             <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-5">
+              <div className="col-span-5 reveal-on-scroll">
                 <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Education</div>
                 <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Learnixa Education</h3>
                 <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
@@ -186,11 +190,11 @@ export default function Home() {
                   <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
                 </Link>
               </div>
-              <div className="col-span-6 col-start-7 rounded-xl overflow-hidden h-[450px]">
+              <div className="col-span-6 col-start-7 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
                 <div 
-                  className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full bg-cover bg-center" 
                   style={{ 
-                    backgroundImage: "url('/images/education.png')",
+                    backgroundImage: "url('/images/education_new.png')",
                   }}
                 />
               </div>
@@ -198,15 +202,15 @@ export default function Home() {
 
             {/* Big Think Technology */}
             <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-6 rounded-xl overflow-hidden h-[450px]">
+              <div className="col-span-6 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
                 <div 
-                  className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full bg-cover bg-center" 
                   style={{ 
                     backgroundImage: "url('/images/tech.png')",
                   }}
                 />
               </div>
-              <div className="col-span-5 col-start-8">
+              <div className="col-span-5 col-start-8 reveal-on-scroll">
                 <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Technology</div>
                 <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Big Think Technology</h3>
                 <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
@@ -309,26 +313,32 @@ export default function Home() {
                 Sustainable Conglomerate Goals
               </h2>
               <p className="font-inter text-lg opacity-80 mb-12 leading-relaxed">
-                To establish Raha Group as a diversified business conglomerate delivering excellence in Education, Energy, Renewable Energy, Manpower, and emerging business sectors while contributing to India&apos;s sustainable growth. 🚀
+                To establish Raha Group as a diversified business conglomerate delivering excellence in Education, Energy, Manpower, Infrastructure, and emerging business sectors while contributing to India&apos;s sustainable growth. 🚀
               </p>
             </div>
             <div className="col-span-6 col-start-7 space-y-6">
-              <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">Innovation &amp; Growth</h4>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/20 transition-colors">
+                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">01. Clean Energy Transition</h4>
                 <p className="mt-2 text-white/60 font-inter text-sm leading-relaxed">
-                  Continuously introduce new business opportunities and technology-driven solutions.
+                  Deploy advanced EV charging infrastructure and sustainable solar solutions across India to accelerate green mobility.
                 </p>
               </div>
-              <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">Sustainable Development</h4>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/20 transition-colors">
+                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">02. Empower Future Leaders</h4>
                 <p className="mt-2 text-white/60 font-inter text-sm leading-relaxed">
-                  Create businesses that generate long-term value for customers, partners, employees, and society.
+                  Provide structured career counseling and university placement support to help medical students access global EdTech channels.
                 </p>
               </div>
-              <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">Customer Satisfaction</h4>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/20 transition-colors">
+                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">03. Drive Digital Transformation</h4>
                 <p className="mt-2 text-white/60 font-inter text-sm leading-relaxed">
-                  Deliver high-quality services with transparency, trust, and long-term relationships.
+                  Deliver result-oriented marketing and technology solutions to help SMEs and enterprises scale their digital footprint.
+                </p>
+              </div>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/20 transition-colors">
+                <h4 className="font-plus-jakarta text-xl font-bold text-[#fedb9c]">04. Build Premium Infrastructure</h4>
+                <p className="mt-2 text-white/60 font-inter text-sm leading-relaxed">
+                  Offer end-to-end real estate advisory and quality property consulting that ensures transparent and high-yielding investments.
                 </p>
               </div>
             </div>
@@ -402,9 +412,6 @@ export default function Home() {
                   }}
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-secondary px-6 py-3 text-white font-inter text-xs font-bold uppercase tracking-wider">
-                CHAIRMAN &amp; CEO
-              </div>
             </div>
             <div className="col-span-6 col-start-8">
               <span className="material-symbols-outlined text-6xl text-[#735b28] mb-6">format_quote</span>
@@ -413,7 +420,7 @@ export default function Home() {
               </blockquote>
               <div className="h-px w-20 bg-black mb-4"></div>
               <p className="font-plus-jakarta text-xl font-bold text-black">Rahul Kumar</p>
-              <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Group Chairman &amp; CEO, Raha Group</p>
+              <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Raha Group</p>
             </div>
 
             <div className="hidden lg:block lg:col-span-4 lg:col-start-9">
@@ -475,25 +482,29 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-6 z-10 animate-fade-up">
             <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full mb-6">
+                <img src="/images/Raha_Group_Logo.svg" alt="Raha Group Logo" className="h-12 w-auto object-contain" />
+                <span className="font-inter text-[10px] font-bold text-white uppercase tracking-widest pr-0.5">Raha Group</span>
+              </div>
               <span className="font-inter text-xs font-bold uppercase tracking-[0.2em] text-[#fedb9c] mb-6 block">
-                Legacy in the Making
+                Architectural Prestige
               </span>
               <h1 className="font-plus-jakarta text-4xl font-extrabold text-white mb-12 leading-tight">
                 Building Businesses That <br /> Shape Tomorrow
               </h1>
               <div className="flex flex-col gap-4">
                 <Link 
-                  href="/#verticals-mobile" 
-                  className="bg-[#735b28] text-white px-8 py-4 rounded-lg font-inter text-sm uppercase font-bold text-center hover:scale-105 transition-transform duration-300"
+                  href="/#verticals-desktop" 
+                  className="bg-white text-black px-8 py-4 rounded-lg font-inter text-sm font-bold hover:scale-105 transition-all text-center"
                 >
-                  Explore Our Companies
+                  Explore Our Verticals
                 </Link>
-                <a 
-                  href="mailto:info@rahagroup.co.in" 
-                  className="border border-white/30 text-white px-8 py-4 rounded-lg font-inter text-sm uppercase text-center hover:bg-white/10 transition-all duration-300"
+                <Link 
+                  href="/#investor" 
+                  className="border border-white text-white px-8 py-4 rounded-lg font-inter text-sm font-bold hover:bg-white/10 transition-all text-center"
                 >
-                  Get in Touch
-                </a>
+                  Investor Relations
+                </Link>
               </div>
             </div>
           </div>
@@ -602,12 +613,12 @@ export default function Home() {
               <div 
                 className="h-64 w-full bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('/images/education.png')",
+                  backgroundImage: "url('/images/education_new.png')",
                 }}
               />
               <div className="p-8">
                 <div className="font-inter text-xs text-[#735b28] font-bold uppercase mb-2">Education</div>
-                <h3 className="font-plus-jakarta text-xl font-bold text-black mb-3">Learnixa</h3>
+                <h3 className="font-plus-jakarta text-xl font-bold text-black mb-3">Learnixa Education</h3>
                 <p className="font-inter text-sm text-on-surface-variant mb-6 leading-relaxed">
                   Expert guidance for MBBS in India &amp; Abroad, career counselling, university admissions, documentation, and visa support.
                 </p>
@@ -626,7 +637,7 @@ export default function Home() {
               />
               <div className="p-8">
                 <div className="font-inter text-xs text-[#735b28] font-bold uppercase mb-2">Technology</div>
-                <h3 className="font-plus-jakarta text-xl font-bold text-black mb-3">Big Think</h3>
+                <h3 className="font-plus-jakarta text-xl font-bold text-black mb-3">Big Think Technology</h3>
                 <p className="font-inter text-sm text-on-surface-variant mb-6 leading-relaxed">
                   Innovative digital marketing solutions including social media marketing, performance ads, branding, website development, and lead generation.
                 </p>
@@ -641,25 +652,36 @@ export default function Home() {
         {/* Mobile Why Raha Group (Values) */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-6 flex flex-col gap-10">
+            <div className="text-center mb-4">
+              <span className="font-inter text-xs text-[#735b28] font-bold uppercase tracking-widest mb-3 block">Our Goals</span>
+              <h2 className="font-plus-jakarta text-2xl font-extrabold text-black">Sustainable Conglomerate Goals</h2>
+            </div>
             <div>
-              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">workspace_premium</span>
-              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">Innovation &amp; Growth</h3>
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">bolt</span>
+              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">1. Clean Energy Transition</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Continuously introduce new business opportunities and technology-driven solutions.
+                Deploy advanced EV charging infrastructure and sustainable solar solutions across India to accelerate green mobility.
               </p>
             </div>
             <div>
-              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">visibility</span>
-              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">Sustainable Development</h3>
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">school</span>
+              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">2. Empower Future Leaders</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Create businesses that generate long-term value for customers, partners, employees, and society.
+                Provide structured career counseling and university placement support to help medical students access global EdTech channels.
               </p>
             </div>
             <div>
-              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">diversity_3</span>
-              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">Customer Satisfaction</h3>
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">laptop_mac</span>
+              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">3. Drive Digital Transformation</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Deliver high-quality services with transparency, trust, and long-term relationships.
+                Deliver result-oriented marketing and technology solutions to help SMEs and enterprises scale their digital footprint.
+              </p>
+            </div>
+            <div>
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-4">apartment</span>
+              <h3 className="font-plus-jakarta text-lg font-bold mb-3 text-black">4. Build Premium Infrastructure</h3>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                Offer end-to-end real estate advisory and quality property consulting that ensures transparent and high-yielding investments.
               </p>
             </div>
           </div>
@@ -745,26 +767,23 @@ export default function Home() {
         <section className="py-12 bg-black text-white" id="investment-mobile">
           <div className="container mx-auto px-6">
             <div className="mb-10">
-              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest mb-3 block">Market Insight</span>
+              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest mb-3 block">Market Research</span>
               <h2 className="font-plus-jakarta text-3xl font-extrabold text-white leading-tight">Market Analysis</h2>
-              <p className="font-inter text-sm text-white/70 leading-relaxed mt-4">
-                Strategic conglomerate position capitalization in modern multi-sector spaces.
-              </p>
             </div>
             <div className="flex flex-col gap-6">
               <div className="p-8 border border-white/10 rounded-xl hover:bg-[#735b28]/10 transition-colors">
-                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">Growing Multi-Sector Opportunities</h4>
-                <p className="font-inter text-sm text-white/60 mb-6">India&apos;s rapidly expanding economy is creating strong opportunities across Electric Mobility, Education, and Real Estate.</p>
+                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">01. Growing Multi-Sector Opportunities</h4>
+                <p className="font-inter text-sm text-white/60 mb-6">India&apos;s rapidly expanding economy is creating strong opportunities across Electric Mobility, Education, and Real Estate. Government initiatives, urban development, and digital transformation continue to drive demand.</p>
                 <div className="h-1 bg-[#735b28] w-12" />
               </div>
               <div className="p-8 border border-white/10 rounded-xl hover:bg-[#735b28]/10 transition-colors">
-                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">Rising Customer Demand</h4>
-                <p className="font-inter text-sm text-white/60 mb-6">Consumers seek trusted companies that deliver quality, innovation, and long-term value (such as EV charging and real estate solutions).</p>
+                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">02. Rising Customer Demand</h4>
+                <p className="font-inter text-sm text-white/60 mb-6">Consumers today seek trusted companies that deliver quality, innovation, and long-term value. The increasing need for EV charging infrastructure, career-focused education, and premium real estate solutions reflects consistent demand.</p>
                 <div className="h-1 bg-[#735b28] w-12" />
               </div>
               <div className="p-8 border border-white/10 rounded-xl hover:bg-[#735b28]/10 transition-colors">
-                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">Strong Future Investment Potential</h4>
-                <p className="font-inter text-sm text-white/60 mb-6">With rising infrastructure investments, urbanization, and shift towards sustainable tech, the market offers exceptional growth potential.</p>
+                <h4 className="font-plus-jakarta text-lg font-bold mb-4 text-white">03. Strong Future Investment Potential</h4>
+                <p className="font-inter text-sm text-white/60 mb-6">With rising infrastructure investments, expanding urbanization, and the shift towards sustainable technologies, the market offers exceptional long-term growth potential.</p>
                 <div className="h-1 bg-[#735b28] w-12" />
               </div>
             </div>
@@ -775,21 +794,24 @@ export default function Home() {
         <section className="py-12 bg-[#0a1120] text-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-10">
-              <h2 className="font-plus-jakarta text-2xl font-bold text-white mb-2">Future Frontiers</h2>
-              <p className="font-inter text-sm text-white/60">Exploring the next wave of roadmaps.</p>
+              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest mb-3 block">Future Roadmaps</span>
+              <h2 className="font-plus-jakarta text-2xl font-bold text-white mb-2">Future Expansion</h2>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col gap-6">
               <div className="glass-card p-6 rounded-xl text-center flex flex-col items-center justify-center">
                 <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">bolt</span>
-                <h5 className="font-inter text-xs font-bold uppercase tracking-wider text-white">Raha Energy ⚡</h5>
+                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Energy ⚡</h5>
+                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Expanding reliable energy solutions with a focus on innovation, efficiency, and nationwide accessibility.</p>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
                 <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">groups_3</span>
-                <h5 className="font-inter text-xs font-bold uppercase tracking-wider text-white">Raha Manpower 👷</h5>
+                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Manpower 👷</h5>
+                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Building a trusted workforce solutions platform by connecting skilled professionals with leading organizations.</p>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
                 <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">solar_power</span>
-                <h5 className="font-inter text-xs font-bold uppercase tracking-wider text-white">Raha Solar ☀</h5>
+                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Solar ☀</h5>
+                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Driving India&apos;s clean energy transition through advanced solar solutions for residential and commercial sectors.</p>
               </div>
             </div>
           </div>
@@ -814,7 +836,7 @@ export default function Home() {
                 </blockquote>
                 <div className="h-px w-20 bg-[#735b28] mb-4" />
                 <h4 className="font-plus-jakarta text-lg font-bold text-black">Rahul Kumar</h4>
-                <p className="text-[#735b28] font-inter text-xs uppercase tracking-widest mt-1">Group Chairman &amp; CEO</p>
+                <p className="text-[#735b28] font-inter text-xs uppercase tracking-widest mt-1">Raha Group</p>
               </div>
             </div>
           </div>
@@ -824,23 +846,166 @@ export default function Home() {
         <section className="py-12 bg-black text-white text-center">
           <div className="container mx-auto px-6">
             <h2 className="font-plus-jakarta text-2xl font-extrabold mb-6 leading-tight">Let&apos;s Build the Future Together</h2>
+            <p className="font-inter text-sm text-white/70 mb-8 leading-relaxed">
+              Whether you&apos;re looking to invest, partner, or join our global team, the journey starts here.
+            </p>
             <div className="flex flex-col gap-4">
               <a 
                 href="mailto:info@rahagroup.co.in" 
-                className="bg-[#735b28] text-white px-8 py-4 rounded-lg font-bold font-inter uppercase text-xs tracking-widest text-center"
+                className="bg-[#fedb9c] text-black px-8 py-4 rounded-lg font-bold font-inter uppercase text-xs tracking-widest text-center"
               >
                 Start a Conversation
               </a>
               <Link 
-                href="/#report" 
+                href="/#presentation" 
                 className="border border-white/20 text-white px-8 py-4 rounded-lg font-bold font-inter uppercase text-xs tracking-widest text-center"
               >
-                Download Annual Report
+                Corporate Presentation
               </Link>
             </div>
           </div>
         </section>
       </div>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-28 px-6 md:px-20 max-w-[1280px] mx-auto scroll-mt-20 reveal-on-scroll">
+        <div className="text-center mb-16">
+          <span className="font-inter text-xs text-secondary font-bold uppercase tracking-widest block mb-4">CONNECT WITH US</span>
+          <h2 className="font-plus-jakarta text-3xl md:text-5xl font-extrabold text-black mb-4">Start a Conversation</h2>
+          <p className="font-inter text-sm md:text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            Reach out to our executive teams for partnership inquiries, strategic investments, or general business questions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Info Card */}
+          <div className="lg:col-span-5 bg-[#efeeeb]/50 p-8 md:p-12 rounded-2xl border border-black/5 flex flex-col justify-between">
+            <div>
+              <h3 className="font-plus-jakarta text-2xl font-bold text-black mb-8">Contact Information</h3>
+              
+              <div className="space-y-8">
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-[#735b28] text-2xl">location_on</span>
+                  <div>
+                    <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Corporate Headquarters</h4>
+                    <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                      Raha Group, 12th Floor, Tower B, <br />
+                      Premium Business Park, New Delhi, India
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-[#735b28] text-2xl">mail</span>
+                  <div>
+                    <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Inquiries &amp; Support</h4>
+                    <a href="mailto:info@rahagroup.co.in" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
+                      info@rahagroup.co.in
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-[#735b28] text-2xl">phone</span>
+                  <div>
+                    <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Direct Line</h4>
+                    <p className="font-inter text-sm text-on-surface-variant font-medium">
+                      +91 (011) 4567-8900
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 pt-8 border-t border-black/5">
+              <h4 className="font-plus-jakarta text-xs font-bold text-black uppercase tracking-widest mb-4">Our Divisions</h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-black/5 text-black px-3 py-1.5 rounded-full font-inter text-[10px] font-bold uppercase tracking-wider">Raha Infra</span>
+                <span className="bg-black/5 text-black px-3 py-1.5 rounded-full font-inter text-[10px] font-bold uppercase tracking-wider">Learnixa</span>
+                <span className="bg-black/5 text-black px-3 py-1.5 rounded-full font-inter text-[10px] font-bold uppercase tracking-wider">Big Think</span>
+                <span className="bg-black/5 text-black px-3 py-1.5 rounded-full font-inter text-[10px] font-bold uppercase tracking-wider">Raha Energy</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Form Card */}
+          <div className="lg:col-span-7 bg-white p-8 md:p-12 rounded-2xl border border-black/5 shadow-sm">
+            <form className="space-y-6" suppressHydrationWarning>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block font-plus-jakarta text-xs font-bold text-black uppercase tracking-wider mb-2">Full Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    required 
+                    placeholder="Enter your name" 
+                    className="w-full bg-[#efeeeb]/30 border border-black/10 rounded-lg px-4 py-3 font-inter text-sm text-black placeholder:text-black/30 focus:outline-none focus:border-[#735b28] focus:ring-1 focus:ring-[#735b28] transition-all"
+                    suppressHydrationWarning
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block font-plus-jakarta text-xs font-bold text-black uppercase tracking-wider mb-2">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    required 
+                    placeholder="Enter your email" 
+                    className="w-full bg-[#efeeeb]/30 border border-black/10 rounded-lg px-4 py-3 font-inter text-sm text-black placeholder:text-black/30 focus:outline-none focus:border-[#735b28] focus:ring-1 focus:ring-[#735b28] transition-all"
+                    suppressHydrationWarning
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="phone" className="block font-plus-jakarta text-xs font-bold text-black uppercase tracking-wider mb-2">Phone Number</label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    placeholder="Enter phone number" 
+                    className="w-full bg-[#efeeeb]/30 border border-black/10 rounded-lg px-4 py-3 font-inter text-sm text-black placeholder:text-black/30 focus:outline-none focus:border-[#735b28] focus:ring-1 focus:ring-[#735b28] transition-all"
+                    suppressHydrationWarning
+                  />
+                </div>
+                <div>
+                  <label htmlFor="division" className="block font-plus-jakarta text-xs font-bold text-black uppercase tracking-wider mb-2">Business Division</label>
+                  <select 
+                    id="division" 
+                    className="w-full bg-[#efeeeb]/30 border border-black/10 rounded-lg px-4 py-3 font-inter text-sm text-black focus:outline-none focus:border-[#735b28] focus:ring-1 focus:ring-[#735b28] transition-all"
+                    suppressHydrationWarning
+                  >
+                    <option value="group">Raha Group (General)</option>
+                    <option value="infra">Raha Infra (Real Estate)</option>
+                    <option value="learnixa">Learnixa Education</option>
+                    <option value="bigthink">Big Think Technology</option>
+                    <option value="energy">Raha Energy</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block font-plus-jakarta text-xs font-bold text-black uppercase tracking-wider mb-2">Your Message</label>
+                <textarea 
+                  id="message" 
+                  rows={5} 
+                  required 
+                  placeholder="How can we help you?" 
+                  className="w-full bg-[#efeeeb]/30 border border-black/10 rounded-lg px-4 py-3 font-inter text-sm text-black placeholder:text-black/30 focus:outline-none focus:border-[#735b28] focus:ring-1 focus:ring-[#735b28] transition-all resize-none"
+                  suppressHydrationWarning
+                />
+              </div>
+
+              <button 
+                type="button" 
+                className="w-full bg-black hover:bg-[#735b28] text-white font-inter text-xs font-bold uppercase tracking-widest py-4 rounded-lg transition-colors cursor-pointer"
+                suppressHydrationWarning
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>
